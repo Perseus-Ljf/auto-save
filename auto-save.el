@@ -131,6 +131,7 @@ avoid delete current indent space when you programming."
         (dolist (buf (buffer-list))
           (set-buffer buf)
           (when (and
+                  (or evil-normal-state-p)
                  ;; Buffer associate with a filename?
                  (or (buffer-file-name)
                      (auto-save-is-remote-file))

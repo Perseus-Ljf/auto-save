@@ -91,6 +91,7 @@
 ;;
 
 ;;; Require
+(require 'evil)
 
 ;;; Code:
 
